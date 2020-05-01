@@ -29,8 +29,8 @@ class EnemyList:
 
     def spawn_enemies(self):
         time_now = time()
-        time_dif = time_now - self.last_enemy_time
-        if time_dif > 3:
+        time_diff = time_now - self.last_enemy_time
+        if time_diff > 3:
             new_enemy = Enemy(self.screen)
             self.enemy_list.append(new_enemy)
             self.last_enemy_time = time()
